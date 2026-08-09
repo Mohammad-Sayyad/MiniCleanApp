@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AzmoonGaj.Application\AzmoonGaj.Application.csproj" />
     <ProjectReference Include="..\AzmoonGaj.Domain\AzmoonGaj.Domain.csproj" />
   </ItemGroup>
 

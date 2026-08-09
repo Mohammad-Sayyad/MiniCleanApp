@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace AzmoonGaj.Domain.Entities
 {
-    public class Exam
+    public class Users
     {
         public int Id { get; set; }
 
-        public string Title { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
 
-        public string? Description { get; set; }
+        public string? LastName { get; set; }
+        public string? City { get; set; }
+        public int Old { get; set; }
 
         public DateTime ExamDate { get; set; }
 
@@ -22,6 +24,6 @@ namespace AzmoonGaj.Domain.Entities
 
         public DateTime CreatedAt { get; set; }
 
-        public DateTime? UpdatedAt { get; set; }
+        public DateTime? BirthDate { get; set; }
     }
 }

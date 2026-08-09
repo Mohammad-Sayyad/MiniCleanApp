@@ -16,7 +16,7 @@ namespace AzmoonGaj.Infrastructure.Data
         {
         }
 
-        public DbSet<Exam> Exams => Set<Exam>();
+        public DbSet<Users> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
