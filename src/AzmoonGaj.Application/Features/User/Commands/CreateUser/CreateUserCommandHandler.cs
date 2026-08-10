@@ -18,12 +18,15 @@ namespace AzmoonGaj.Application.Features.User.Commands.CreateUser
      CreateUserCommand request,
      CancellationToken cancellationToken)
         {
-            if (request.Old <= 0) 
+            if (request.Old > 0 || request.Old < 95)
             {
-                throw new ArgumentException("Age must be greater than zero.", nameof(request.Old));
+                 throw new ArgumentException("Age must be greater than zero.");
             }
+            else if (request.Duration <= 0) {
 
-            return await userService.CreateAsync(request, cancellationToken);
+                throw new Exception("Duration should be greater than 0");
+            }
+                return await userService.CreateAsync(request, cancellationToken);
         }
     }
 }
