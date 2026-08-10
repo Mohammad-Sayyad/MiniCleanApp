@@ -19,8 +19,7 @@ builder.Services.AddDbContext<AzmoonGajDb1Context>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-//builder.Services.AddMediatR(cfg =>
-//    cfg.RegisterServicesFromAssembly(typeof(CreateUserCommandHandler).Assembly));
+
 
 builder.Services.AddMediatR(cfg =>
 {
