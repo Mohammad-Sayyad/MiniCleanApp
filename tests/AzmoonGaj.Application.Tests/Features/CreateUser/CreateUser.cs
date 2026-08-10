@@ -26,7 +26,6 @@ namespace AzmoonGaj.Application.Tests.Features.CreateUser
         [Fact]
         public async Task Handle_ValidCommand_ShouldCreateUserAndReturnDto()
         {
-            // Arrange (آماده‌سازی)
             var command = new CreateUserCommand
             {
                 Name = "Sajjad",
@@ -47,11 +46,8 @@ namespace AzmoonGaj.Application.Tests.Features.CreateUser
             _userServiceMock
                 .Setup(s => s.CreateAsync(It.IsAny<CreateUserDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(expectedResult);
-
-            // Act (اجرا)
             var result = await _handler.Handle(command, CancellationToken.None);
 
-            // Assert (بررسی نتیجه)
             result.ShouldNotBeNull();
             result.Id.ShouldBe(1);
             result.Name.ShouldBe("Sajjad");
