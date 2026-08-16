@@ -18,4 +18,8 @@ namespace AzmoonGaj.Domain.Entities
     {
         public long Id { get; set; }
     }
+    public class SecondEntity
+    {
+        public long Id { get; set; }
+    }
 }
