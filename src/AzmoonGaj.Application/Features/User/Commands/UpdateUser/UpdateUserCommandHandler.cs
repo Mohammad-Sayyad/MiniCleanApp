@@ -1,5 +1,4 @@
 ﻿using AzmoonGaj.Domain.Contract.Interface;
-using AzmoonGaj.Domain.Contract.Interface;
 using MediatR;
 using System;
 using System.Collections.Generic;
