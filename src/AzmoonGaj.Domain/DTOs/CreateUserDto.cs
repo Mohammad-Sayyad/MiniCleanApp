@@ -16,5 +16,6 @@ namespace AzmoonGaj.Domain.DTOs
         public int Duration { get; set; }
         public bool IsActive { get; set; } = true;
         public DateTime? BirthDate { get; set; }
+        public string? State { get; set; }
     }
 }
