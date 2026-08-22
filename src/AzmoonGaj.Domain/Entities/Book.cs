@@ -22,4 +22,5 @@ namespace AzmoonGaj.Domain.Entities
     {
         public long Id { get; set; }
     }
+    
 }
